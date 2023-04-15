@@ -1,0 +1,115 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.test_overcome'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.test_overcome"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.4.2'
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+    buildToolsVersion '33.0.1'
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.10.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+    implementation 'androidx.activity:activity-compose:1.7.0'
+    implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+    implementation 'androidx.compose.material3:material3:1.1.0-beta02'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+
+    //data store
+    implementation 'androidx.datastore:datastore-preferences:1.0.0'
+
+    //Navigation
+    implementation "androidx.navigation:navigation-compose:$vNavCompose"
+
+    //Livedata
+    implementation "androidx.compose.runtime:runtime-livedata:$compose_version"
+
+    //Splash screen
+    implementation "androidx.core:core-splashscreen:$vSplash"
+
+    //Room
+    implementation("androidx.room:room-runtime:$vRoom")
+    annotationProcessor("androidx.room:room-compiler:$vRoom")
+    kapt("androidx.room:room-compiler:$vRoom")
+    implementation("androidx.room:room-ktx:$vRoom")
+    testImplementation("androidx.room:room-testing:$vRoom")
+
+    //hilt
+    implementation "com.google.dagger:hilt-android:2.45"
+    kapt "com.google.dagger:hilt-android-compiler:$vHilt"
+    implementation "androidx.hilt:hilt-navigation-compose:$vHiltNavCompose"
+    androidTestImplementation "com.google.dagger:hilt-android-testing:$vHilt"
+    kaptAndroidTest "com.google.dagger:hilt-compiler:$vHilt"
+    testImplementation "com.google.dagger:hilt-android-testing:$vHilt"
+    kaptTest "com.google.dagger:hilt-compiler:$vHilt"
+
+    // Gson
+    implementation "com.google.code.gson:gson:$vGson"
+
+    //Firebae BoM
+    implementation platform('com.google.firebase:firebase-bom:31.2.3')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx:extensions-ktx'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+
+    //Coil
+    implementation("io.coil-kt:coil-compose:2.2.2")
+
+    //Google play services
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4"
+
+
+
+}

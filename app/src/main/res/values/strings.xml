@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">test_overcome</string>
+
+    //New tickets
+    <string name="home_tickets_title">Nuevos</string>
+
+    //Add dilog
+    <string name="home_dialog_title">Agrega un nuevo Ticket</string>
+    <string name="home_dialog_title_label">Título*</string>
+    <string name="home_dialog_name_label">Nombre*</string>
+    <string name="home_dialog_team_label">Equipo responsable</string>
+    <string name="home_dialog_type_label">Tipo de incidencia*</string>
+    <string name="home_dialog_severity_label">Gravedad de la incidencia*</string>
+    <string name="home_dialog_version_label">Version del software</string>
+    <string name="home_dialog_description_label">Descripción*</string>
+    <string name="home_dialog_evidence_label">Datos adjuntos</string>
+
+    <string name="home_dialog_button_cancel_label">Cancelar</string>
+    <string name="home_dialog_button_add_label">Agregar</string>
+
+    <string name="home_dialog_image_button">Agregar imagen</string>
+    <string name="home_dialog_media_button">Agregar video</string>
+
+    //In progress tickets
+    <string name="progress_tickets_title">En proceso</string>
+
+    //Finished tickets
+    <string name="finished_tickets_title">Atendidos</string>
+
+    //Archived tickets
+    <string name="archived_tickets_title">Archivados</string>
+
+    //Details
+    <string name="details_screen_title">Detalles</string>
+    <string name="details_screen_name_label">Responsable de registrar: </string>
+    <string name="details_screen_team_label">Equipo a cargo de solución: </string>
+    <string name="details_screen_type_label">Tipo de incidencia: </string>
+    <string name="details_screen_severity_label">Gravedad de la incidencia: </string>
+    <string name="details_screen_version_label">Versión de software: </string>
+    <string name="details_screen_description_label">Detalles: </string>
+    <string name="details_screen_evidence_label">Evidencia: </string>
+
+    <string name="details_screen_button_new">Comenzar</string>
+    <string name="details_screen_button_process">Finalizar</string>
+
+    //Drawer menu
+    <string name="drawer_menu_logout_title">Cerrar sesión</string>
+
+
+    //Error
+    <string name="empty_error">Este campo no puede estar vacío</string>
+    <string name="character_invalid_error">Formato inválido</string>
+    <string name="pass_confirm_error">Las contraseñas no coinciden</string>
+
+    //Logout Dialog
+    <string name="logout_dialog_title">Cerrar sesión</string>
+    <string name="logout_dialog_text">¿Deseas cerrar la sesión?</string>
+    <string name="logout_dialog_accept_button">Aceptar</string>
+    <string name="logout_dialog_cancel_button">Cancelar</string>
+
+    //Login Screen
+    <string name="login_name_label">Nombre</string>
+    <string name="login_name_hint">Tu nombre</string>
+
+    <string name="login_email_label">Correo</string>
+    <string name="login_email_hint">alumno@sckhole.com</string>
+
+    <string name="login_pass_label">Contraseña</string>
+    <string name="login_pass_hint">• • • • • • • • •</string>
+
+    <string name="login_button_text">Iniciar sesión</string>
+    <string name="login_remember_pass">Recuperar contraseña</string>
+
+    <string name="login_registry_button">Registrarse</string>
+    <string name="login_registry_third">O iniciar sesión con: </string>
+
+    <string name="login_pass_confirm_label">Confitmar contraseña</string>
+    <string name="login_pass_confirm_hint">*********</string>
+
+    //Login Success Dialog
+    <string name="login_success_dialog_title">¡Inicio de sesión exitoso!</string>
+
+    //Login Success Dialog
+    <string name="registry_success_dialog_title">¡Registro completado!</string>
+    <string name="registry_success_dialog_text">El registro se realizó correctamente.</string>
+
+    //Edit Dialog
+    <string name="edit_dialog_button_update_label">Actualizar</string>
+
+
+</resources>
