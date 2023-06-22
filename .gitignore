@@ -39,12 +39,6 @@ app/build/
 # External tool builders
 .externalToolBuilders/
 
-# IntelliJ
-*.iml
-*.ipr
-*.iws
-.idea/
-
 # Gradle Wrapper
 gradle/wrapper/gradle-wrapper.jar
 gradle/caches/

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">test_overcome</string>
+    <string name="app_name">Custom Tickets</string>
 
     //New tickets
     <string name="home_tickets_title">Nuevos</string>
@@ -86,6 +86,8 @@
 
     //Edit Dialog
     <string name="edit_dialog_button_update_label">Actualizar</string>
+    <string name="shortcut_short_label">short label test\n</string>
+    <string name="shortcut_long_label">long label test</string>
 
 
 </resources>
